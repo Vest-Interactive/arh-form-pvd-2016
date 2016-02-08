@@ -1,0 +1,36 @@
+{
+  "name": "gulp-boilerplate",
+  "version": "1.0.0",
+  "description": "Another gulp boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "deploy": "surge -p build -d vest-arh.surge.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autobind-decorator": "1.3.2",
+    "babel": "5.8.23",
+    "babelify": "6.4.0",
+    "browser-sync": "2.9.11",
+    "browserify": "11.2.0",
+    "gulp": "3.9.0",
+    "gulp-autoprefixer": "3.1.0",
+    "gulp-notify": "2.2.0",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-template-html": "0.0.2",
+    "gulp-uglify": "1.4.2",
+    "gulp-util": "3.0.7",
+    "install": "0.1.8",
+    "surge": "^0.17.5",
+    "vinyl-buffer": "1.0.0",
+    "vinyl-source-stream": "1.1.0",
+    "watchify": "3.4.0"
+  },
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "jquery-modal": "^0.6.1"
+  }
+}

@@ -1,0 +1,55 @@
+html {
+
+}
+
+$headline : 'Goudy Bookletter 1911', serif;
+$copy : 'Muli', sans-serif;
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: $copy;
+	font-size: 1rem;
+}
+
+h1 {
+	// ...
+	font-family: $headline ;
+	font-weight: 100;
+	font-size: 41px;
+	line-height: 46px;
+}
+
+h3 {
+	font-family: $headline ;
+	font-size: 26px;
+	line-height: 30px;
+	padding: 0; margin: 0;
+	margin-bottom: 20px;
+	letter-spacing: -0.0225em;
+	font-weight: 100;
+}
+
+ul {
+	padding:0; margin: 0;
+	margin-left: 40px;
+}
+
+
+p {
+	font-size: 16px;
+	line-height: 19px;
+	padding:0; margin: 0;
+}
+
+
+
+$arh-primary: #850037;
+
+.arh-color { color: $arh-primary; }
+
+
+
+section {
+	margin-bottom: 20px;
+}
