@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "jquery": "^2.2.0",
-    "jquery-modal": "^0.6.1"
+    "jquery-modal": "^0.6.1",
+    "sweetalert": "^1.1.3"
   }
 }

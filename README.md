@@ -1,6 +1,4 @@
-# Static Starter File
+# ARH Cardiovascular Institute 
 
-Using Babel, BrowserSync, Browserify 
+Landing Page with Questionnaire 
 
- - Deploy with surge
- - https://github.com/grit96/gulp-template-html

@@ -44,6 +44,15 @@ gulp.task('images',function(){
 });
 
 /*
+  Ajax (php)
+*/
+gulp.task('ajax', function() {
+  gulp.src('html/ajax/**')
+    .pipe(gulp.dest('./build/ajax'))
+    .pipe(reload({stream:true}))
+});
+
+/*
   HTML
 */
 gulp.task('html',function() {
@@ -114,8 +123,9 @@ gulp.task('scripts', function() {
 });
 
 // run 'scripts' task first, then watch for future changes
-gulp.task('default', ['images','styles','scripts','html','browser-sync'], function() {
+gulp.task('default', ['images','styles','scripts','html','ajax','browser-sync'], function() {
   gulp.watch('css/**/*', ['styles']); // gulp watch for stylus changes
   gulp.watch('html/**/*', ['html']);
+  gulp.watch('html/ajax/*', ['ajax']);
   return buildScript('main.js', true); // browserify watch for JS changes
 });
