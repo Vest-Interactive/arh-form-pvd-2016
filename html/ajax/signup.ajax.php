@@ -21,7 +21,7 @@ if(isset($_POST) && isset($_POST['register'])) {
 
 			$newMessage = '<table cellpadding="0" cellspacing="0" border="0" align="center" width="600" height="35">'.
 						  '<tbody><tr>'.
-						  '<td style="font-size: 18px; font-weight: strong;">ARH - doyourlegshurt.com : Contact Request</td>'.
+						  '<td style="font-size: 18px; font-weight: strong;">doyourlegshurt.com - Contact Request</td>'.
 						  '</tr></tbody>'.
 						  '</table>'.
 						  '<table cellpadding="0" cellspacing="0" border="0" align="center" width="600">'.
@@ -45,7 +45,7 @@ if(isset($_POST) && isset($_POST['register'])) {
 			$headers = "MIME-Version: 1.0" . "\r\n";
 			$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 			$headers .= 'From: no-reply@doyourlegshurt.com' . "\r\n";
-			$result = mail('andrews@vestadvertising.com', '[doyourlegshurt.com] Polar Plunge 2016 - Corporate Sponsorship Request', $newMessage, $headers);			
+			$result = mail('andrews@vestadvertising.com', '[doyourlegshurt.com] ARH &amp; UK - Contact Request', $newMessage, $headers);			
 
 			if($result) {
 				echo json_encode(array( "success" => 1, "code" => 1));
