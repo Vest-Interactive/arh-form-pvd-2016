@@ -22,11 +22,9 @@ main {
 }
 
 body {
-		background-image: url(../images/bg-1.jpg);
+	background-image: url(../images/bg-1.jpg);
 	background-position: center center;
 	background-size: cover;
-	//background-position-y: 0;
-	//backgrond-position-x: center;
 	background-repeat: no-repeat;
 }
 
@@ -385,6 +383,7 @@ $arhSecondary : #850037;
 }
 
 .icon-plus3 {
+	display: none;
 	&:hover {
 			cursor: pointer;
 		}
@@ -495,6 +494,10 @@ $arhSecondary : #850037;
 	.whatis-copy, .whatare-copy, .yourchances-copy, .whathappens-copy {
 		height: 0;
 		overflow: hidden;
+	}
+
+	.icon-plus3 {
+		display: inline-block;
 	}
 
 
