@@ -306,6 +306,7 @@ $arhSecondary : #850037;
 .photo-footer {
 	margin-top: -230px;
 
+	background: url(../images/water.png) 0 230px repeat-x;
 	background-image: url(../images/water.png);
 	background-repeat: repeat-x;
 	background-position-y: 230px;
@@ -382,11 +383,19 @@ $arhSecondary : #850037;
 	height: 100% !important;
 }
 
-.icon-plus3 {
+.icon-plus3, .expand-mobile {
 	display: none;
 	&:hover {
 			cursor: pointer;
 		}
+}
+
+
+// expand mbile arrow
+.expand-mobile {
+	img {
+		width: 15px;
+	}
 }
 
 
@@ -496,7 +505,7 @@ $arhSecondary : #850037;
 		overflow: hidden;
 	}
 
-	.icon-plus3 {
+	.icon-plus3, .expand-mobile {
 		display: inline-block;
 	}
 

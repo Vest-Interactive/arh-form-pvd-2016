@@ -87,7 +87,7 @@ function Site($, params) {
 
 
     // Handle Size Stuff
-    $('.icon-plus3').on('click', function() {
+    $('.expand-mobile').on('click', function() {
     	let $this = $(this);
     	let $section = $this.parent().parent();
     	$this.fadeOut();

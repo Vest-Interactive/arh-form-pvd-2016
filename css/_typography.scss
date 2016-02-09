@@ -28,6 +28,7 @@ h3 {
 	margin-bottom: 20px;
 	letter-spacing: -0.0225em;
 	font-weight: 100;
+	font-style: italic;
 }
 
 ul {
@@ -52,4 +53,12 @@ $arh-primary: #850037;
 
 section {
 	margin-bottom: 20px;
+}
+
+.column-40 h1 {
+	font-style: italic;
+}
+
+.italic {
+	font-style: italic;
 }
