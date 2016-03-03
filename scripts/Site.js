@@ -38,7 +38,8 @@ function Site($, params) {
     
     $('#call-me-btn').on('click', function(e) {
 
-      //var $this = $(this);
+      ga('send', 'event', 'Call-back form button', 'clicked');
+      
       var isvalid = $('#call-form').valid();
      
       if(isvalid){
@@ -96,8 +97,15 @@ function Site($, params) {
 
     })
 
+    // Listen for Quiz Choices
+    $('input[id^="radio-"]').on('click', function(e) {
+      ga('send', 'event', $(this).attr('name'), $(this).data('field'));
+    });
 
-
+    // Listen for Phone Click
+    $('#question-phone').on('click', function() {
+      ga('send', 'event', 'Questionnaire Phone Link', 'clicked');
+    })
 
 }
 
