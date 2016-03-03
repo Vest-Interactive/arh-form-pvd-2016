@@ -8,6 +8,9 @@ function Site($, params) {
 	
 
 	$('#callback-form-btn').on('click', function(e) {
+
+    ga('send', 'event', 'Call-back form button', 'clicked');
+    
 		$('#signup-modal').modal({
 			fadeDuration: 250,
 			fadeDelay: 1
@@ -37,8 +40,6 @@ function Site($, params) {
 
     
     $('#call-me-btn').on('click', function(e) {
-
-      ga('send', 'event', 'Call-back form button', 'clicked');
       
       var isvalid = $('#call-form').valid();
      
