@@ -32,11 +32,7 @@ if(isset($_POST) && isset($_POST['register'])) {
 						  '<tr>'.
 						  '<td width="175"> Phone  </td>'.
 						  '<td width="525">: '.$register['phone'].'</td>'.
-						  '</tr>'.
-						  '<tr>'.
-						  '<td width="175"> Email </td>'.
-						  '<td width="525">: '.$register['email'].'</td>'.
-						  '</tr>'. 
+						  '</tr>'.						 
 						  '<tr>'.
 						  '<td width="175"> Created On </td>'.
 						  '<td width="525">: '.date("F j, Y, g:i a").'</td>'.

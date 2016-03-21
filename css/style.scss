@@ -277,8 +277,8 @@ $arhSecondary : #850037;
 }
 
 .call-block {
-	float: left;
-	 width: 37%;
+	//float: left;
+	 //width: 37%;
 
 	p {
 		margin-top: 20px;
@@ -295,6 +295,7 @@ $arhSecondary : #850037;
 .form-footer {
 	margin-top: 30px;
 	.arh {
+		margin-top: 10px;
 		margin-left: 60px;
 	}
 }
@@ -304,7 +305,7 @@ $arhSecondary : #850037;
 // PHOTO FOOTer
 
 .photo-footer {
-	margin-top: -230px;
+	margin-top: -10px;
 
 	background: url(../images/water.png) 0 230px repeat-x;
 	background-image: url(../images/water.png);
@@ -327,7 +328,7 @@ $arhSecondary : #850037;
 	}
 
 	#call-form {
-		margin-top: 40px;
+		margin-top: 20px;
 	}
 
 	label.el {
@@ -489,6 +490,7 @@ $arhSecondary : #850037;
 
 	.form-footer {
 		.arh {
+			margin-top: 10px;
 			margin-left: 18%;
 		}
 	}
@@ -530,3 +532,59 @@ $arhSecondary : #850037;
 	}
 }
 
+.submission-form-container {
+	margin-bottom: 40px;
+}
+
+.submission-form-container .row {
+  width: 95%; 
+  margin-left: 15px;
+}
+
+.security-disclaimer {
+  font-size: 0.8em;
+  padding: 15px;
+}
+
+#question-phone {
+	display: block;
+	font-size: 2em;
+	margin-top:15px;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+
+	i {
+		padding-right: 10px;
+	}
+}
+
+#title-phone {
+	color: #901D4C;
+	font-size: 2.5em;
+	text-decoration: none;
+	//border-bottom: 1px dotted #901D4C;
+	margin-bottom: 20px;
+	display: block;
+	overflow: hidden;
+	clear: both;
+	text-align: center;
+}
+
+.black-line {
+	width: 30%;
+	height: 1px;
+	background-color: #d6d6d6;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+
+.form-cta-title {
+	margin-bottom: 10px;
+}
+
+#call-me-btn {
+	@media screen and (max-width: 515px) {
+		float: none !important;
+	}
+}

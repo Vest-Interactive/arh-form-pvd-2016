@@ -11,18 +11,20 @@ function Site($, params) {
 
     ga('send', 'event', 'Call-back form button', 'clicked');
     
-		$('#signup-modal').modal({
-			fadeDuration: 250,
-			fadeDelay: 1
-		});
+		// $('#signup-modal').modal({
+		// 	fadeDuration: 250,
+		// 	fadeDelay: 1
+		// });
 	});
+
+  $('#title-phone').on('click', function(){
+    ga('send', 'event', 'Top Section Phone Number', 'clicked');
+  })
 
 
    $("#call-form").validate({
       rules: {
-        name: {
-          required: true
-        },
+        
         phone: {
           required: true
         },
@@ -50,7 +52,6 @@ function Site($, params) {
           action: 'register',
           name: $('#name').val(),
           phone: $('#phone').val(),
-          email: $('#email').val()
         }
 
 
@@ -69,10 +70,7 @@ function Site($, params) {
           success: function(msg) {
             if (msg.hasOwnProperty('success')) {
               $('#name').val(''),
-							$('#phone').val('');
-							$('#email').val('');
-
-							$.modal.close();
+							$('#phone').val('');							
 
 							swal("Thank you for your interest", "We will be getting back with you shortly");
             }
